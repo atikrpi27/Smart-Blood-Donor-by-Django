@@ -1,0 +1,484 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+/* header-top */
+
+.header-top {
+    background-color: red;
+    padding: 4px;
+}
+
+.container-fluid {
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+.mail {
+    color: white;
+    float: left;
+}
+
+.mail-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.mail span {
+    font-size: 13px;
+}
+
+.phone {
+    margin-left: 20px;
+    color: white;
+    float: left;
+}
+
+.phone-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.phone span {
+    font-size: 12px;
+}
+
+.reg-btn {
+    padding-top: 0px;
+    padding-bottom: 4px !important;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 13px !important;
+    color: white;
+    background: #750000;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.reg-btn:hover {
+    text-decoration: none;
+    background: rgb(150, 2, 2);
+    border: 1px solid rgb(87, 46, 1);
+    color: beige;
+}
+
+
+/*<!-------navbar btn-------->*/
+
+.btn {
+    padding: 2px 15px;
+    font-size: 16px;
+}
+
+
+/*<!-------body Content-------->*/
+
+.slidemenu {
+    background-color: rgb(245 245 245);
+    height: 100%;
+    top: 10px;
+    position: sticky;
+}
+
+.slidemenu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.slidemenu ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.slidemenu ul a:hover {
+    color: #cf152d;
+    font-weight: 700;
+}
+
+.slidemenu li {
+    border: 1px solid #8080802e;
+    background: #80808014;
+    padding: 20px 20px;
+}
+
+#content {
+    position: relative;
+    /* margin: 50px auto; */
+    width: 100%;
+    height: 350px;
+}
+
+/* h3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
+
+#blood_selector {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 2;
+}
+
+#blood_selector div {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border: 1px solid #b51e23;
+    border-radius: 25%;
+}
+
+#blood_selector div:hover {
+    border: 1px solid #1da1f2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#blood_content {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#center_via_c {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#center_via_c .center_via {
+    width: 8px;
+    background: #ccc;
+    height: 168px;
+    position: absolute;
+    left: 445px;
+    top: 150px;
+}
+
+#center_via_c .blood_via {
+    height: 0;
+    background-color: #b51e23;
+    right: 50%;
+    width: 8px;
+    transition: height 0.25s;
+}
+
+.bar {
+    position: relative;
+    left: 445px;
+    top: -40px;
+    width: 40%;
+    height: 8px;
+    border-radius: 2px 0 0 2px;
+    background-color: #ccc;
+}
+
+.main_bag {
+    position: absolute;
+    width: 99px;
+    height: 140px;
+    top: 0px;
+    left: 400px;
+    border-radius: 30px;
+    opacity: 0.8;
+    background-color: rgba(154, 207, 234, 0.9);
+    border: 8px solid rgba(154, 207, 234, 0.9);
+}
+
+.main_bag .blood {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #b51e23;
+    border-radius: 0 0 35px 35px;
+    transition: height 1s;
+}
+
+.main_bag .blood::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 100%;
+    height: 10px;
+    background-color: #92191b;
+    border-radius: 100%;
+}
+
+.main_bag::before {
+    content: "";
+    position: absolute;
+    top: -48px;
+    left: 45%;
+    width: 10%;
+    height: 40px;
+    background-color: #ccc;
+}
+
+#humans {
+    position: absolute;
+    top: 195px;
+    width: 320px;
+    height: 155px;
+    left: 285px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#humans .human {
+    position: relative;
+}
+
+#humans .human .via {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    height: 8px;
+    background-color: #ccc;
+    bottom: 0;
+}
+
+#humans .human .blood_via {
+    position: absolute;
+    height: 8px;
+    background-color: #b51e23;
+    width: 0;
+    bottom: 0;
+    transition: width 1s;
+}
+
+#humans .human.left {
+    display: grid;
+    justify-content: left;
+    align-content: center;
+}
+
+#humans .human.left .blood_via {
+    right: 0;
+}
+
+#humans .human.left .scribble {
+    left: -25px;
+}
+
+#humans .human.left .scribble span {
+    left: -40px;
+    text-align: right;
+    top: 5px;
+}
+
+#humans .human.right {
+    display: grid;
+    justify-content: right;
+    align-content: center;
+}
+
+#humans .human.right .scribble {
+    right: -50px;
+}
+
+#humans .human.right .scribble span {
+    right: -15px;
+    top: 5px;
+}
+
+#humans .human .scribble {
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    top: 10px;
+    transition: background 1s;
+}
+
+#humans .human .scribble span {
+    position: absolute;
+    display: grid;
+    align-items: end;
+    height: 100%;
+}
+
+#humans .human .scribble .head {
+    width: 30%;
+    height: 30%;
+    background-color: #666;
+    border-radius: 50%;
+    margin: 2px auto;
+    transition: background 1s;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+#humans .human .scribble .body {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    height: 30%;
+    background-color: #666;
+    border-radius: 50% 50% 0 0;
+    margin: 0 auto;
+    transition: background 1s;
+}
+
+.no_transition {
+    transition: none !important;
+}
+
+.highlight {
+    border: 2px solid #b51e23 !important;
+    font-weight: bold;
+}
+
+.highlightText {
+    font-weight: bold;
+}
+
+.section1Details {
+    text-align: justify;
+}
+
+.crucial h2 {
+    color: #cf152d
+}
+
+.crucial p {
+    text-align: justify;
+}
+
+
+/* ---------Section 3-Collapes------- */
+
+.parent {
+    font-weight: 600;
+}
+
+.child {
+    height: 250px;
+}
+
+.baby {
+    text-align: justify;
+}
+
+
+/*----------Section 4-Campaign--------*/
+
+.section4 {
+    background-color: #007caf;
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.box {
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    margin: 0px auto;
+    top: 10%;
+    left: 15%;
+}
+
+.campaign img {
+    width: 100%;
+    height: 215px;
+}
+
+.saveLife p {
+    text-align: justify;
+    padding-right: 60px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .slidemenu {
+        position: relative;
+    }
+    .section4 {
+        width: 100%;
+        height: 880px;
+    }
+    .saveLife h5 {
+        text-align: center;
+    }
+    .saveLife p {
+        padding: 0px 20px;
+    }
+    .button-secondary {
+        margin-left: 17%;
+    }
+    .button-success {
+        font-size: 12px;
+        line-height: 2.4;
+        margin: 8px;
+    }
+    #content {
+        position: relative;
+        margin: 25px auto;
+        width: 300px;
+        height: 300px;
+    }
+    #content h5 {
+        top: 10px;
+        font-size: 11px;
+    }
+    #content #blood_selector {
+        width: 110px;
+        height: 60px;
+        font-size: 0.75em;
+        top: 35px;
+    }
+    #content .bar {
+        top: -50px;
+        left: 160px;
+    }
+    #content .main_bag {
+        width: 75px;
+        height: 105px;
+        left: 125px;
+    }
+    #content .main_bag::before {
+        top: -57px;
+        height: 50px;
+        width: 8px;
+    }
+    #content .main_bag .blood {
+        height: 70%;
+    }
+    #content #center_via_c .center_via {
+        left: 158px;
+        top: 125px;
+    }
+    #content #humans {
+        top: 161px;
+        width: 180px;
+        left: 70px;
+    }
+}

@@ -1,0 +1,54 @@
+{%extends 'base.html'%} {%block head%} {% load static %}
+<!-- Main css -->
+<link rel="stylesheet" href="{%static 'UserProfile/css/style.css'%}" />
+{%endblock%} {%block body%}
+<section class="sign-in">
+    <div class="container">
+        <div class="login_form">
+            <div class=" {{class2}} {{class}} ">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                {{message}}
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <img src="{%static 'base/images/signin-image.jpg'%}" alt="sing up image" />
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <form action="{% url 'UserProfile:login'%}" method="post" class="row g-3">
+                        {% csrf_token %}
+                        <h3>Sign into your account</h3>
+                        <span class="notice-1">Give blood, Take blood & Save life</span>
+                        <!-- <center><span class="text-{{class}} bg-info">sdfgdsfg</span></center> -->
+                        <div class="">
+                            <input
+                                name="username"
+                                type="text"
+                                class="form-control"
+                                placeholder="Enter your user Name"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                required
+                            />
+                        </div>
+                        <div class="">
+                            <input
+                                name="password"
+                                type="password"
+                                class="form-control"
+                                placeholder="Enter your password"
+                                id="exampleInputPassword1"
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <a class="small text-muted" href="#!">Forgot password?</a>
+                        <p class="mb-5 pb-lg-2" style="color: #393f81">
+                            Don't have an account?
+                            <a href="{% url 'UserProfile:registrations'%}" style="color: #393f81"> Register here </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

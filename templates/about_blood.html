@@ -1,0 +1,264 @@
+{%extends 'base.html'%}
+
+{%block head%}
+    <title>{{title}}</title>
+    {% load static %}
+    <!---------------------------------------------bootstrap icon cdn-------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+    <!---------------------------------------------bootstrap cdn------------------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!---------------------------------------------fontawesome icon cdn-------------------------------------->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--------------------------------------------main css------------------------------------------------->
+    <link rel="stylesheet" href="{%static 'base/css/aboutBlood.css'%}">
+{%endblock%}
+
+{% block body %}
+<div class="container-fluid">
+    <!-----------------------------------------------------------------------------------------------
+                                                            section 1
+    ------------------------------------------------------------------------------------------------>
+    <div class="section1">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 slidemenu">
+                <h5 class="mt-5 mb-4">QUICK LINKS</h5>
+                <ul>
+                    <li>
+                        <a href="#bloodTransfusion">Blood Types and Transfusion</a>
+                    </li>
+                    <li>
+                        <a href="#livesSave">Lives are saved by blood transfusions</a>
+                    </li>
+                    <li>
+                        <a href="#section2">A CRUCIAL NEED</a>
+                    </li>
+                    <li>
+                        <a href="#section3">All child Parents Pairings</a>
+                    </li>
+                    <li>
+                        <a href="#section4">Live Blood Campaign</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="col-12 section1Title">
+                    <h1 class="text-center mt-5 mb-5" id="bloodTransfusion">
+                        Blood Types and Transfusion
+                    </h1>
+                </div>
+                <div id="content">
+                    <h5>Select the donor blood type:</h5>
+                    <div id="blood_selector">
+                        <div>O−</div>
+                        <div>O+</div>
+                        <div>A−</div>
+                        <div>A+</div>
+                        <div>B−</div>
+                        <div>B+</div>
+                        <div>AB−</div>
+                        <div>AB+</div>
+                    </div>
+                    <div id="blood_content">
+                        <div class="bar"></div>
+                        <div class="main_bag">
+                            <div class="blood"></div>
+                        </div>
+                    </div>
+                    <div id="center_via_c">
+                        <div class="center_via">
+                            <div class="blood_via"></div>
+                        </div>
+                    </div>
+                    <div id="humans">
+                        <div class="human left">
+                            <div class="scribble">
+                                <span class="blood_type">O−</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human right">
+                            <div class="scribble">
+                                <span class="blood_type">O+</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human left">
+                            <div class="scribble">
+                                <span class="blood_type">A−</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human right">
+                            <div class="scribble">
+                                <span class="blood_type">A+</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human left">
+                            <div class="scribble">
+                                <span class="blood_type">B−</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human right">
+                            <div class="scribble">
+                                <span class="blood_type">B+</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human left">
+                            <div class="scribble">
+                                <span class="blood_type">AB−</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                        <div class="human right">
+                            <div class="scribble">
+                                <span class="blood_type">AB+</span>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="via"></div>
+                            <div class="blood_via"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h4 class="text-center mt-5" id="livesSave">Each year 4.5 million lives are saved by blood transfusions.</h4>
+
+                <p class="section1Details mt-3">
+                    There are very specific ways in which blood types must be matched for a safe transfusion. The right blood transfusion can mean the difference between life and death. Every 2 seconds someone in the US needs a blood transfusion. Use the interactive graphic
+                    below to learn more about matching blood types for transfusions.Also, Rh-negative blood is given to Rh-negative patients, and Rh-positive or Rh-negative blood may be given to Rh-positive patients.The rules for plasma are the reverse.
+                    <br> <b>The universal red cell donor has Type O negative blood.</b> <br><b>The universal plasma donor has Type AB blood.</b>
+                </p>
+
+                <!-----------------------------------------------------------------------------------------------
+                                                            section 2
+                ------------------------------------------------------------------------------------------------>
+                <div class="section2" id="section2">
+                    <div class="row crucial mt-5">
+                        <h2 class="col-12">A CRUCIAL NEED</h2>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                            <p>The need for blood never goes away, and these stats prove it. Someone in the U.S. needs blood every two seconds, and one in ten patients who show up to a hospital will need blood. Over 800 people need to donate every day
+                                to meet the daily needs of the hospitals we serve. Blood is only good for 42 days. It can’t be replicated or produced. It is because of our volunteer blood donors that blood is there for local patients in need of transfusions.
+                                That’s neighbors helping neighbors in the best way. The reason to donate is simple…it saves
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                            <iframe width="100%" height="255" src="https://www.youtube.com/embed/J-0EzqVeHkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" , style="border-radius: 30px;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----------------------------------------------------------------------------------------------
+                                                            section 3
+                ------------------------------------------------------------------------------------------------>
+                <div class="section3 mt-5" id="section3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="parent">ALL CHILD PARENT PAIRINGS</span> 
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <img class="col-12 child" src="{%static 'base/images/baby.jpeg'%}/">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThrees">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrees" aria-expanded="false" aria-controls="collapseThrees">
+                                            <span class="parent">DIRECTED DONATION</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThrees" class="accordion-collapse collapse" aria-labelledby="headingThrees" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="baby">A directed donation is one where a patient chooses the donor. A physician’s order is required and units need to be collected at least 5 working days prior to the planned surgery. The patient and the attending
+                                                physician sign this request.
+                                                <p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="parent">BABY DONORS</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="baby">You may have heard someone say “I’m a baby donor” or “I donate for the babies.” What does that mean? It means they are CMV negative – the person has not been exposed to the cytomegalovirus, or CMV. CMV is
+                                                a complex flu-like virus that most adults are exposed to at sometime in their lives. It is a double stranded DNA virus belonging to the herpes virus family. This is important because in low birth weight
+                                                infants, the consequences of such infection may be severe or even fatal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----------------------------------------------------------------------------------------------
+                                                            section 4
+                ------------------------------------------------------------------------------------------------>
+
+                <div class="section4 mt-5" id="section4">
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-12 campaign">
+                                <img src="{%static 'base/images/image.jpeg'%}" alt="image.jpeg">
+
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12 saveLife">
+                                <h5 class="mt-4 fw-bold">Ready to Help Save a Life?</h5>
+                                <p class="mt-4">Now that you know how your blood type can help recipients, please schedule an appointment to donate today.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <p class="text-center fw-bold mt-3">Find a blood drive near you</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12 mt-3">
+                                <button type="button" class="btn btn-outline-secondary button-secondary">Secondary</button>
+                                <button type="button" class="btn btn-success button-success">Join Blood Campaign</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!---Col-9 END-->
+    </div>
+</div>
+</div>
+</div>
+<script src="{% static 'base/js/about_blood.js'%}"></script>
+{% endblock %}

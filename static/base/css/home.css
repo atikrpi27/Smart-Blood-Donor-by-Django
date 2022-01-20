@@ -1,0 +1,381 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/*==================================================
+                Header Cover
+===================================================*/
+.header-cover img {
+    width: 100%;
+    height: 80vh;
+}
+
+
+/*----------Body Content--------*/
+
+
+/*----------section 1--------*/
+
+.section1 {
+    margin-top: 70px;
+}
+
+.section1-left img {
+    width: 95%;
+    height: 340px;
+}
+
+.section1-right h1 {
+    font-family: Yaldevi Colombo;
+    font-weight: bold;
+}
+
+.section1-right p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/*----------section 2--------*/
+
+.section2 {
+    margin-top: 70px;
+}
+
+.section2-right img {
+    width: 100%;
+    height: 340px;
+}
+
+.section2-left h1 {
+    font-family: Yaldevi Colombo;
+    font-weight: bold;
+}
+
+.section2-left p {
+    width: 95%;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/*----------section 3--------*/
+
+.section3 {
+    margin-top: 100px;
+}
+
+.section3 h4 {
+    font-weight: bold;
+    font-family: Yaldevi Colombo;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.section3 p {
+    width: 95%;
+    text-align: justify;
+}
+
+
+/*----------section 3 first--------*/
+
+.section3-first img {
+    width: 95%;
+    height: 235px;
+}
+
+.section3-first p {
+    display: flow-root;
+    margin-left: 5px;
+}
+
+.section3-first h4 {
+    float: left;
+    margin-left: 5px;
+}
+
+
+/*----------section 3 second--------*/
+
+.section3-second p {
+    display: flow-root;
+    margin-left: 5px;
+}
+
+.section3-second h4 {
+    float: left;
+    margin-left: 5px;
+}
+
+.section3-second img {
+    width: 95%;
+    height: 235px;
+}
+
+
+/*----------section 3 third--------*/
+
+.section3-third img {
+    width: 95%;
+    height: 235px;
+}
+
+.section3-third p {
+    display: flow-root;
+    margin-left: 5px;
+}
+
+.section3-third h4 {
+    float: left;
+    margin-left: 5px;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    color: rgb(255, 0, 0);
+    float: left;
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#more1 {
+    display: none;
+}
+
+#myBtn1 {
+    color: rgb(255, 0, 0);
+    float: left;
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#more2 {
+    display: none;
+}
+
+#myBtn2 {
+    color: rgb(255, 0, 0);
+    float: left;
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+/*----------section 4--------*/
+
+.section4 {
+    margin-top: 50px;
+}
+
+.section4-head h1 {
+    font-family: Yaldevi Colombo;
+    font-weight: bold;
+}
+
+.hartbeat {
+    width: 15%;
+    /* height: 70%; */
+    margin-top: -30px;
+}
+
+.process {
+    width: 90%;
+    margin-top: 20px;
+}
+
+
+/*----------section 5--------*/
+
+.section5 {
+    margin-top: 50px;
+}
+
+.section5-header h1 {
+    font-family: Yaldevi Colombo;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.left-img {
+    width: 55%;
+    height: 60%;
+}
+
+.middle-img {
+    width: 30%;
+    height: 60%;
+}
+
+.section5-right {
+    float: right;
+}
+
+.right-img {
+    width: 40%;
+    height: 60%;
+}
+
+.section5 p {
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+
+/*----------section 6--------*/
+
+.section6 {
+    margin-top: 100px;
+}
+
+.section6-header h1 {
+    font-family: Yaldevi Colombo;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.card-bg {
+    background-color: rgb(192 188 187 / 80%);
+    height: 100%;
+}
+
+.card {
+    margin-top: 100px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #ffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.50), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-caption {
+    margin-top: 10px;
+}
+
+.card .card-image .card-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 330px;
+}
+
+.img-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .social-icon {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.card .social-icon a {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.card .social-icon a .facebook {
+    padding: 8px 10px;
+    background-color: #097cdb;
+    color: #ffffffe8;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.card .social-icon a .facebook:hover {
+    background-color: #0067ff;
+    color: white;
+}
+
+.card .social-icon a .whatsapp {
+    padding: 8px 10px;
+    background-color: #44BE53;
+    color: white;
+    border-radius: 50%;
+}
+
+.card .social-icon a .whatsapp:hover {
+    background-color: #1f9b00;
+    color: white;
+}
+
+.card .social-icon a .github {
+    padding: 8px 10px;
+    background-color: #323232;
+    color: #ffffffe8;
+    border-radius: 50%;
+}
+
+.card .social-icon a .github:hover {
+    background-color: black;
+    color: white;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.card .table {
+    padding: 15px 30px;
+}
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/
+
+
+/*----------section 2--------*/

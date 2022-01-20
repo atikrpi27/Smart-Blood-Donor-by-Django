@@ -1,0 +1,240 @@
+/* header-top */
+.header-top {
+    background-color: red;
+    padding: 4px;
+}
+
+.container-fluid {
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+.mail {
+    color: white;
+    float: left;
+}
+
+.mail-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.mail span {
+    font-size: 13px;
+}
+
+.phone {
+    margin-left: 20px;
+    color: white;
+    float: left;
+}
+
+.phone-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.phone span {
+    font-size: 12px;
+}
+
+.reg-btn {
+    padding-top: 0px;
+    padding-bottom: 4px !important;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 13px !important;
+    color: white;
+    background: #750000;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.reg-btn:hover {
+    text-decoration: none;
+    background: rgb(150, 2, 2);
+    border: 1px solid rgb(87, 46, 1);
+    color: beige;
+}
+/*==================================================
+                NavBar
+===================================================*/
+
+/*<!=================navbar btn=================->*/
+.login_button{
+    margin-top: 7px;
+}
+.btn {
+    padding: 2px 15px;
+    font-size: 16px;
+}
+.user_profile_image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*==============DropDown menue=================== */
+.dropdown-menu[data-bs-popper] {
+    margin-top: 11px;
+}
+.dropdown-menu {
+    margin:-53px;
+    padding: 2px 0px;
+    background-color: #ffffffab;
+}
+.dropdown-item{
+    padding: 1px 20px;
+} 
+
+/*----------Header Cover---------*/
+
+.header-cover img {
+    width: 100%;
+    height: 80vh;
+}
+/*==================================================
+                Footer
+===================================================*/
+
+/*----------Footer--------*/
+
+.footer {
+    background: url('/static/base/images/footer_banner.png');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    background-color: #5F1212;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.footer_first_left,
+.footer_first_middle,
+.footer_first_right {
+    margin-top: 60px;
+}
+
+.footer_social_icon a {
+    float: left;
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 50%;
+    width: 34px;
+}
+
+.twitter a {
+    background-color: #00acee;
+}
+
+.facebook a {
+    background-color: #1877f2;
+}
+
+.linkedin a {
+    background-color: #0e76a8;
+}
+
+.whatsapp a {
+    background-color: #25D366;
+}
+
+
+/*----------Footer Line--------*/
+
+.line {
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+
+
+/*----------footer_last--------*/
+
+.footer_last_left,
+.footer_last_middle,
+.footer_last_right {
+    margin-top: 30px;
+}
+
+.footer_logo img {
+    width: 60%;
+    height: 80px;
+}
+
+.footer_logo p {
+    margin-top: 20px;
+    /* text-align: justify; */
+    font-size: 14px;
+    width: 80%;
+}
+
+
+/*----------Quick Links--------*/
+
+.quick_links_line {
+    border: 1px solid white;
+    width: 40%;
+}
+
+.photo_gallery_line {
+    border: 1px solid white;
+    width: 35%;
+}
+
+.footer_menu {
+    margin-top: 20px;
+}
+
+.footer_menu li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/*----------Gallery--------*/
+
+.gallery {
+    margin-top: 25px;
+}
+
+.gallery img {
+    height: 70px;
+    width: 95px;
+    margin-bottom: 5px;
+}
+
+
+/*----------footer_reserve_part--------*/
+
+.footer_reserve_part p {
+    height: 35px;
+    line-height: 2.5;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 30px 0px 0px 0px;
+}
+
+.footer_reserve_part {
+    background-color: #8b00008c;
+}

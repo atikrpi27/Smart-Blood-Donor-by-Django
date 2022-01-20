@@ -1,0 +1,186 @@
+{%extends 'base.html'%} {%block head%} {% load static %}
+<!-- Main css -->
+<!---------------------------------------------fontawesome icon cdn-------------------------------------->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="{%static 'articals/css/communityPost.css'%}" />
+{%endblock%} {%block body%}
+<!----------------------------------------------------------------------------------------------
+                                                                Body Content
+----------------------------------------------------------------------------------------------->
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Create a new post</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="registration_form">
+                    <form action="{%url 'articals:request_blood_post'%}" method="post" class="row g-3">
+                        {% csrf_token %}
+                        <div class="col-md-6">
+                            <select name="bloodGroup" class="form-select" aria-label="Default select example" required>
+                                <option value="">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="AB+">AB+</option>
+                                <option value="A-">A-</option>
+                                <option value="AB-">AB-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input
+                                type="number"
+                                name="quantity"
+                                value="1"
+                                placeholder="Quantity (Bag/s)"
+                                class="form-control"
+                                id="inputquantity"
+                                required
+                            />
+                        </div>
+                        <div class="col-md-6">
+                            <input
+                                type="text"
+                                name="location"
+                                placeholder="Location"
+                                class="form-control"
+                                id="inputlocation"
+                            />
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="date" name="date" class="form-control" id="inputdate" />
+                        </div>
+                        <div class="col-md-6">
+                            <input
+                                type="number"
+                                name="phone"
+                                placeholder="Phone"
+                                class="form-control"
+                                id="inputPhone"
+                            />
+                        </div>
+                        <input type="submit" value="Post" class="btn btn-success" />
+                    </form>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-success">Po00st</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-10 container">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Create a new post
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-3 mb-5">
+    {%for post in allPost%}
+    <div class="row d-flex align-items-center justify-content-center mb-5">
+        <div class="col-md-10">
+            <div class="card p-1 bg-light">
+                <div class="d-flex justify-content-between p-2 px-3 ">
+                    <div class="d-flex flex-row align-items-center pr-4">
+                        <img
+                            class="avatar"
+                            width="50"
+                            class="rounded-circle"
+                            src="{%static 'UserProfile/images/profile.png'%}"
+                            alt=""
+                        />
+                        <div class="d-flex flex-column ml-2">
+                            <span class="font-weight-bold">{{post.author}}</span>
+                            <small class="text-primary"> {{post.currentDate}} </small>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ellipsis">
+                        <small class="mr-2">20 mins</small> <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12 pl-5">
+                        <p class="text-justify text-danger">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <strong>{{post.bloodgroup}}</strong>
+                        </p>
+                        <p class="text-justify ">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                             <strong class="text-primary">{{post.locations}}</strong>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 pr-5">
+                        <p class="text-justify text-danger">
+                            <i class="fas fa-briefcase"></i>
+                            <strong>{{post.neededBlood}} bag (<i class="bi bi-droplet-fill"></i>)</strong>
+                        </p>
+                        <p class="text-justify text-primary">
+                            <i class="bi bi-telephone-outbound-fill"></i>
+                            {{post.phone}}
+                        </p>
+                    </div>
+                    
+                    <hr />
+                    <div class="d-flex justify-content-between align-items-center mb-3 mt-0">
+                        <div class="d-flex flex-row icons d-flex align-items-center mr-5">
+                            <i class="bi bi-hand-thumbs-up mr-2"></i>
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <div class="d-flex flex-row muted-color">
+                            <span>2 comments</span> <span class="ml-2">Share</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="comments">
+                        <div class="d-flex flex-row mb-2">
+                            <img
+                            class="rounded-image"
+                            width="40"
+                            class="rounded-circle"
+                            src="{%static 'UserProfile/images/profile.png'%}"
+                            alt=""
+                            />
+                            <div class="d-flex flex-column ml-2">
+                                <span class="name">Daniel Frozer</span>
+                                <small class="comment-text">I like this alot! thanks alot</small>
+                                <div class="d-flex flex-row align-items-center status">
+                                    <small>Like</small> <small>Reply</small> <small>Translate</small>
+                                    <small>18 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-input">
+                            <input type="text" class="form-control" />
+                            <div class="fonts"><i class="fa fa-camera"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+></script>
+{%endblock%}
