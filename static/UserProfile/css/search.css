@@ -1,0 +1,309 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+/* header-top */
+
+.header-top {
+    background-color: red;
+    padding: 4px;
+}
+
+.container-fluid {
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+.mail {
+    color: white;
+    float: left;
+}
+
+.mail-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.mail span {
+    font-size: 13px;
+}
+
+.phone {
+    margin-left: 20px;
+    color: white;
+    float: left;
+}
+
+.phone-icon {
+    float: left;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.phone span {
+    font-size: 12px;
+}
+
+.reg-btn {
+    padding-top: 0px;
+    padding-bottom: 4px!important;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 13px !important;
+    color: white;
+    background: #750000;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.reg-btn:hover {
+    text-decoration: none;
+    background: rgb(150, 2, 2);
+    border: 1px solid rgb(87, 46, 1);
+    color: beige;
+}
+/*<!-------navbar btn-------->*/
+
+.btn {
+    padding: 2px 15px;
+    font-size: 16px;
+}
+/*----------Header Cover---------*/
+
+.header-cover img {
+    width: 100%;
+    height: 80vh;
+}
+/*----------Body Content--------*/
+
+.search {
+    height: 250px;
+}
+
+.searchOption label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.searchOption select,
+input {
+    height: 40px;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.SearchDonors {
+    margin-bottom: 30px;
+}
+
+.SearchDonors h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+}
+
+.searchOption {
+    background-color: #EB2C2926;
+    height: 135px;
+    width: 100%;
+    position: absolute
+}
+
+.s_all_field {
+    position: relative;
+}
+
+.search_btn button {
+    width: 120px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+.btn-outline-danger:hover {
+    border: none;
+}
+
+.donor_info p {
+    font-size: 17px;
+}
+
+.donor_info {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #eb2c29;
+    color: #fff;
+}
+
+.avatar {
+    float: left;
+    flex: 1;
+}
+
+.avatar img {
+    height: 100px;
+    width: 100px;
+}
+
+.metadata {
+    padding: 0 31px 0 125px;
+    line-height: 2;
+}
+/*     
+.metadata .meta {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.metadata .meta .label {
+    flex: 1;
+} */
+
+.metadata .meta.blood_group .value {
+    text-transform: uppercase;
+}
+
+.metadata .meta.district .value {
+    text-transform: capitalize;
+}
+/*----------Footer--------*/
+
+.footer {
+    background: url(Img/footer_banner.png);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    background-color: #5F1212;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.footer_first_left,
+.footer_first_middle,
+.footer_first_right {
+    margin-top: 60px;
+}
+
+.footer_social_icon a {
+    float: left;
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 50%;
+    width: 34px;
+}
+
+.twitter a {
+    background-color: #00acee;
+}
+
+.facebook a {
+    background-color: #1877f2;
+}
+
+.linkedin a {
+    background-color: #0e76a8;
+}
+
+.whatsapp a {
+    background-color: #25D366;
+}
+/*----------Footer Line--------*/
+
+.line {
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+/*----------footer_last--------*/
+
+.footer_last_left,
+.footer_last_middle,
+.footer_last_right {
+    margin-top: 30px;
+}
+
+.footer_logo img {
+    width: 60%;
+    height: 80px;
+}
+
+.footer_logo p {
+    margin-top: 20px;
+    /* text-align: justify; */
+    font-size: 14px;
+    width: 80%;
+}
+/*----------Quick Links--------*/
+
+.quick_links_line {
+    border: 1px solid white;
+    width: 40%;
+}
+
+.photo_gallery_line {
+    border: 1px solid white;
+    width: 35%;
+}
+
+.footer_menu {
+    margin-top: 20px;
+}
+
+.footer_menu li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*----------Gallery--------*/
+
+.gallery {
+    margin-top: 25px;
+}
+
+.gallery img {
+    height: 70px;
+    width: 95px;
+    margin-bottom: 5px;
+}
+/*----------footer_reserve_part--------*/
+
+.footer_reserve_part p {
+    height: 35px;
+    line-height: 2.5;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 30px 0px 0px 0px;
+}
+
+.footer_reserve_part {
+    background-color: #8b00008c;
+}
+
+@media only screen and (max-width: 980px) {
+    .searchOption {
+        height: 400px;
+    }
+    .donor_list {
+        margin-top: 270px;
+    }
+}

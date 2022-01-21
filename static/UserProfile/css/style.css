@@ -1,0 +1,244 @@
+.login_form {
+    background-color: white;
+    max-width: 780px;
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    /* font-family: 'PT Sans'; */
+    -webkit-box-shadow: 3px 3px 6px #ccc;
+    -moz-box-shadow: 3px 3px 6px #ccc;
+    box-shadow: 3px 3px 6px 1px #ccc;
+    padding: 30px 30px 0px 30px;
+    border-radius: 7px;
+}
+.login_form h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.notice-1 {
+    font-size: 10px;
+    margin-top: 0px;
+    color: #ff0000;
+}
+.success {
+    background-color: #44cf90;
+}
+.alert1 {
+    padding: 7px 1rem;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+/* ===========================================
+                Registrations page
+=========================================== */
+.registration_form {
+    background-color: white;
+    max-width: 780px;
+    width: 100%;
+    margin: 15px auto;
+    position: relative;
+    /* font-family: 'PT Sans'; */
+    -webkit-box-shadow: 3px 3px 6px #ccc;
+    -moz-box-shadow: 3px 3px 6px #ccc;
+    box-shadow: 3px 3px 6px 1px #ccc;
+    padding: 30px;
+    border-radius: 7px;
+}
+.registration_form h3 {
+    font-size: 27px;
+    text-shadow: 1px 2px 1px #ccc;
+}
+.registration_form h3,
+h5 {
+    text-align: center;
+    margin-top: 0;
+}
+.registration_form h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.notice {
+    font-size: 10px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color: #9d9d9d;
+}
+
+/* ==================================
+              Button
+=================================== */
+
+.myButton {
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 9px 16px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+.myButton:hover {
+    color: black;
+    background-color: #ffffff;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* ==================================
+              User Profile
+=================================== */
+/* body {
+    background-color: #f9f9fa;
+} */
+
+.padding {
+    padding: 3rem !important;
+}
+
+.user-card-full {
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.m-r-0 {
+    margin-right: 0px;
+}
+
+.m-l-0 {
+    margin-left: 0px;
+}
+
+.user-card-full .user-profile {
+    border-radius: 5px 0 0 5px;
+}
+
+.bg-c-lite-green {
+    background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+    background: linear-gradient(to right, #ee5a6f, #f29263);
+}
+
+.user-profile {
+    padding: 20px 0;
+}
+
+.card-block {
+    padding: 1.25rem;
+}
+
+.m-b-25 {
+    margin-bottom: 25px;
+}
+
+.img-radius {
+    border-radius: 5px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.card .card-block p {
+    line-height: 25px;
+}
+
+@media only screen and (min-width: 1400px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+.card-block {
+    padding: 1.25rem;
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.p-b-5 {
+    padding-bottom: 5px !important;
+}
+
+.card .card-block p {
+    line-height: 25px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    color: #919aa3 !important;
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.f-w-600 {
+    font-weight: 600;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-t-40 {
+    margin-top: 20px;
+}
+
+.p-b-5 {
+    padding-bottom: 5px !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-t-40 {
+    margin-top: 20px;
+}
+
+.user-card-full .social-link li {
+    display: inline-block;
+}
+
+.user-card-full .social-link li a {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
