@@ -1,6 +1,12 @@
 .body {
     background-color: #BA68C8;
 }
+<<<<<<< HEAD
+=======
+/* .updateprofile{
+    background-color: #BA68C8;
+} */
+>>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 
 .form-control:focus {
     box-shadow: none;
