@@ -4,55 +4,35 @@
     width: 100%;
     margin: 30px auto;
     position: relative;
-<<<<<<< HEAD
-=======
-    /* font-family: 'PT Sans'; */
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
     -webkit-box-shadow: 3px 3px 6px #ccc;
     -moz-box-shadow: 3px 3px 6px #ccc;
     box-shadow: 3px 3px 6px 1px #ccc;
     padding: 30px 30px 0px 30px;
     border-radius: 7px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .login_form h5 {
     font-size: 14px;
     margin-bottom: 10px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .notice-1 {
     font-size: 10px;
     margin-top: 0px;
     color: #ff0000;
 }
-<<<<<<< HEAD
 
 .success {
     background-color: #44cf90;
 }
 
-=======
-.success {
-    background-color: #44cf90;
-}
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .alert1 {
     padding: 7px 1rem;
 }
 
-<<<<<<< HEAD
 
 /* The close button */
 
-=======
-/* The close button */
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .closebtn {
     margin-left: 15px;
     color: white;
@@ -64,7 +44,6 @@
     transition: 0.3s;
 }
 
-<<<<<<< HEAD
 
 /* When moving the mouse over the close button */
 
@@ -77,15 +56,6 @@
                 Registrations page
 =========================================== */
 
-=======
-/* When moving the mouse over the close button */
-.closebtn:hover {
-    color: black;
-}
-/* ===========================================
-                Registrations page
-=========================================== */
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .registration_form {
     background-color: white;
     max-width: 780px;
@@ -99,35 +69,23 @@
     padding: 30px;
     border-radius: 7px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .registration_form h3 {
     font-size: 27px;
     text-shadow: 1px 2px 1px #ccc;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .registration_form h3,
 h5 {
     text-align: center;
     margin-top: 0;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .registration_form h5 {
     font-size: 14px;
     margin-bottom: 10px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .notice {
     font-size: 10px;
     margin-bottom: 0;
@@ -136,10 +94,7 @@ h5 {
     color: #9d9d9d;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /* ==================================
               Button
 =================================== */
@@ -157,38 +112,21 @@ h5 {
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 .myButton:hover {
     color: black;
     background-color: #ffffff;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
-.myButton:active {
+<<<<<<< HEAD=======>>>>>>>e70157f52cc276c41ba11b093875c3f5ef97af91 .myButton:active {
     position: relative;
     top: 1px;
 }
 
 <<<<<<< HEAD
-
 /* ==================================
               User Profile
 =================================== */
-
-
-=======
-/* ==================================
-              User Profile
-=================================== */
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
-/* body {
-    background-color: #f9f9fa;
-} */
 
 .padding {
     padding: 3rem !important;
@@ -318,8 +256,4 @@ h6 {
     margin: 0 10px 0 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91

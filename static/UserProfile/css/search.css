@@ -7,11 +7,8 @@ body {
     overflow-x: hidden;
     width: 100vw;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /* header-top */
 
 .header-top {
@@ -74,33 +71,24 @@ body {
     border: 1px solid rgb(87, 46, 1);
     color: beige;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*<!-------navbar btn-------->*/
 
 .btn {
     padding: 2px 15px;
     font-size: 16px;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------Header Cover---------*/
 
 .header-cover img {
     width: 100%;
     height: 80vh;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------Body Content--------*/
 
 .search {
@@ -178,18 +166,6 @@ input {
     padding: 0 31px 0 125px;
     line-height: 2;
 }
-<<<<<<< HEAD
-=======
-/*     
-.metadata .meta {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.metadata .meta .label {
-    flex: 1;
-} */
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 
 .metadata .meta.blood_group .value {
     text-transform: uppercase;
@@ -198,11 +174,8 @@ input {
 .metadata .meta.district .value {
     text-transform: capitalize;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------Footer--------*/
 
 .footer {
@@ -249,11 +222,8 @@ input {
 .whatsapp a {
     background-color: #25D366;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------Footer Line--------*/
 
 .line {
@@ -261,11 +231,8 @@ input {
     border: 1px solid white;
     margin-top: 30px;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------footer_last--------*/
 
 .footer_last_left,
@@ -281,18 +248,11 @@ input {
 
 .footer_logo p {
     margin-top: 20px;
-<<<<<<< HEAD
     font-size: 14px;
     width: 80%;
 }
 
 
-=======
-    /* text-align: justify; */
-    font-size: 14px;
-    width: 80%;
-}
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------Quick Links--------*/
 
 .quick_links_line {
@@ -320,11 +280,8 @@ input {
     font-size: 18px;
     font-weight: 600;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------Gallery--------*/
 
 .gallery {
@@ -336,11 +293,8 @@ input {
     width: 95px;
     margin-bottom: 5px;
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> e70157f52cc276c41ba11b093875c3f5ef97af91
+<<<<<<< HEAD=======>>>>>>>e70157f52cc276c41ba11b093875c3f5ef97af91
 /*----------footer_reserve_part--------*/
 
 .footer_reserve_part p {
