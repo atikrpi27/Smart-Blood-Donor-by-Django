@@ -6,10 +6,6 @@ from articals.models import BloodRequestPost
 
 # Create your views here.
 def articals_index(request):
-    # if request.user.is_authenticated:
-    #     current_user=request.user
-    #     user_id=current_user.id
-    #     post=BloodRequestPost.objects.get(author__pk=user_id)
     post=BloodRequestPost.objects.all()
     context={"allPost":post}
     return render(request, 'articals/communityPost.html',context)
